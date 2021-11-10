@@ -103,7 +103,9 @@ function Car(model, milesPerGallon) {
 }
 
 Car.prototype.fill = function(gallons){
-  this.tank = gallons
+  return this.tank = this.tank + gallons
+
+  
 }
 
 Car.prototype.run = function(km){
@@ -114,8 +116,7 @@ const caravan = new Car('BMW', 40);
 caravan.fill(20);
 caravan.run(77);
 
-console.log(caravan)
-
+console.log(caravan);
 
 /*
   TASK 3
